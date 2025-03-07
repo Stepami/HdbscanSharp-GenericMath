@@ -1,24 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-		<Title>HDBSCAN implementation</Title>
-		<Description>HDBSCAN is a clustering algorithm developed by Campello, Moulavi, and Sander. It extends DBSCAN by converting it into a hierarchical clustering algorithm, and then using a technique to extract a flat clustering based in the stability of clusters.</Description>
-		<AssemblyTitle>HdbscanSharp</AssemblyTitle>
-		<VersionPrefix>3.0.0</VersionPrefix>
-		<AssemblyName>HdbscanSharp</AssemblyName>
-		<TargetFramework>net8.0</TargetFramework>
-		<PackageId>HdbscanSharp</PackageId>
-		<Authors>doxakis</Authors>
-		<PackageTags>Hdbscan;unsupervised machine learning;clustering algorithm</PackageTags>
-		<PackageProjectUrl>https://github.com/doxakis/HdbscanSharp</PackageProjectUrl>
-		<PackageLicenseUrl>https://github.com/doxakis/HdbscanSharp/blob/master/LICENSE</PackageLicenseUrl>
-		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/doxakis/HdbscanSharp</RepositoryUrl>
-		<SignAssembly>true</SignAssembly>
-		<DelaySign>false</DelaySign>
-		<AssemblyOriginatorKeyFile>HdbscanSharp.snk</AssemblyOriginatorKeyFile>
-		<LangVersion>latest</LangVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="System.Numerics.Tensors" Version="9.0.2"/>
-  </ItemGroup>
+    <PropertyGroup>
+        <Title>HDBSCAN implementation with Generic Math support</Title>
+        <Description>It is the fork of original HdbscanSharp package (2.0.0) refactored to support Generic Math with usage of SIMD accelerated tensor calculations</Description>
+        <AssemblyTitle>HdbscanSharp</AssemblyTitle>
+        <VersionPrefix>1.0.0</VersionPrefix>
+        <AssemblyName>HdbscanSharp</AssemblyName>
+        <TargetFramework>net8.0</TargetFramework>
+        <PackageId>HdbscanSharp.GenericMath</PackageId>
+        <Authors>Stepami</Authors>
+        <PackageTags>Hdbscan;unsupervised machine learning;clustering algorithm;generic math;tensors;simd</PackageTags>
+        <PackageProjectUrl>https://github.com/Stepami/HdbscanSharp-GenericMath</PackageProjectUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/Stepami/HdbscanSharp-GenericMath</RepositoryUrl>
+        <SignAssembly>true</SignAssembly>
+        <DelaySign>false</DelaySign>
+        <AssemblyOriginatorKeyFile>HdbscanSharp.snk</AssemblyOriginatorKeyFile>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Numerics.Tensors" Version="9.0.2"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="../LICENSE" Pack="true" Visible="false" PackagePath=""/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" Visible="false" PackagePath=""/>
+    </ItemGroup>
 </Project>
