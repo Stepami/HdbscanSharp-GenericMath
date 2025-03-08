@@ -10,18 +10,12 @@ HDBSCAN is a clustering algorithm developed by Campello, Moulavi, and Sander. It
 > From: https://github.com/scikit-learn-contrib/hdbscan
 
 # Supported framework
-
-Before 3.0.0:
-- .NET Standard 2.0
-- .NET Framework 4.5
-
-Since 3.0.0:
 - .NET 8+
 
 # Install from Nuget
 To get the latest version:
 ```
-Install-Package HdbscanSharp
+Install-Package HdbscanSharp.GenericMath
 ```
 
 # Examples
